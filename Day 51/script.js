@@ -1,29 +1,30 @@
- const totalEgg = 6;
+let myString = "50";
+console.log(typeof myString); 
 
- const nestsPerEgg = 2;
-
- const birdsPerNest = 3;
-
- const eggsPerNest = 3;
-
- const totalNests = totalEgg * nestsPerEgg;
-
- const totalBats = totalNests * eggsPerNest;
-
-console.log("Total number of bats that will hatch: " + totalBats);
+let myInteger = parseInt(myString);
+console.log(typeof myInteger); 
+console.log(myInteger); 
 
 
 
+let myNumber = 50;
+console.log(typeof myNumber);
 
-const myName = "Shio"
-
-const motherName = "Nato"
+let myString = myNumber.toString();
+console.log(typeof myString); 
+console.log(myString);
 
 
 
 
- let myAge = 13
-
- let motherAge= 50
-
-console.log(myAge + 20,motherAge)
+let person = {
+    firstName: "shio",
+    lastName: "elikashvili",
+    age: 13,
+    yearOfBirth: 2010,
+    address: "varketili,georgia"
+  };
+  
+  let sentence = `My name is ${person.firstName} ${person.lastName}, I am ${person.age} years old, born in ${person.yearOfBirth}, and currently live at ${person.address}.`;
+  
+  console.log(sentence);
