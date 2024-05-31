@@ -1,5 +1,4 @@
-
-function sumEvenNumbers(start, end) {
+function sumEvenBetween(start, end) {
     let sum = 0;
     for (let i = start; i <= end; i++) {
         if (i % 2 === 0) {
@@ -8,3 +7,6 @@ function sumEvenNumbers(start, end) {
     }
     return sum;
 }
+
+
+console.log(sumEvenBetween(1, 10));
