@@ -1,9 +1,14 @@
 body{
+    background-image: url('/Images/bmw-m5-4k-4a4w57u8py2lnjp2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 500px; 
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: orange;
+    
+    
 }
 
 
