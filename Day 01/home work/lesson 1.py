@@ -55,7 +55,7 @@ pendown()
 
 #paint a windows
 
-color("blue")
+color("light blue")
 begin_fill()
 left(30)
 forward(60)
@@ -86,7 +86,7 @@ pendown()
 right(90)
 forward(50)
 
-color("blue")
+color("light blue")
 begin_fill()
 
 penup()
