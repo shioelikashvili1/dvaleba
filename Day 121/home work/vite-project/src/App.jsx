@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+function CounterApp() {
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="min-h-screen flex justify-center items-center bg-gray-200">
+      <div className="w-full max-w-md bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-xl text-center">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-gray-800">
+          Counter App
+        </h1>
+        <h2 className="text-4xl sm:text-5xl font-extrabold mb-6 sm:mb-8 text-gray-900">
+          {count}
+        </h2>
+        <div className="flex flex-wrap justify-center gap-4">
+          <button
+            onClick={() => setCount(count + 1)}
+            className="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 sm:px-6 rounded transition duration-300"
+          >
+            Increment
+          </button>
+          <button
+            onClick={() => setCount(count - 1)}
+            className="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 sm:px-6 rounded transition duration-300"
+          >
+            Decrement
+          </button>
+          <button
+            onClick={() => setCount(0)}
+            className="bg-gray-500 hover:bg-gray-600 text-white font-medium py-2 px-4 sm:px-6 rounded transition duration-300"
+          >
+            Reset
+          </button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default CounterApp;
